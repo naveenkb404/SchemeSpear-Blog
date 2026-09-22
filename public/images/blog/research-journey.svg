@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070709"/>
+      <stop offset="50%" stop-color="#0c0c14"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <pattern id="grid-10" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1c1c28" stroke-width="1" opacity="0.6"/>
+    </pattern>
+    <filter id="glow-10">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg-grad-10)"/>
+  <rect width="1200" height="675" fill="url(#grid-10)"/>
+
+  <!-- Title -->
+  <text x="60" y="70" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#e63946" letter-spacing="3">TEAM SCORPIUS · SIH 2026 BUILD LOG</text>
+  <text x="60" y="105" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#ffffff" letter-spacing="-0.5">OUR RESEARCH &amp; ENGINEERING JOURNEY</text>
+
+  <!-- Research Lifecycle Milestone Grid -->
+  <g transform="translate(60, 160)">
+    <!-- 01 PROBLEM -->
+    <rect x="0" y="0" width="340" height="150" rx="10" fill="#12121b" stroke="#222233" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="4" fill="#e63946"/>
+    <text x="25" y="40" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#e63946">01 · PROBLEM IDENTIFICATION</text>
+    <text x="25" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">SIH26092 Challenge</text>
+    <text x="25" y="100" font-family="Inter, sans-serif" font-size="12" fill="#aaaaaa">Analyzed application drop-off &amp; information asymmetry in SC financial credit schemes.</text>
+  </g>
+
+  <g transform="translate(430, 160)">
+    <!-- 02 RESEARCH -->
+    <rect x="0" y="0" width="340" height="150" rx="10" fill="#12121b" stroke="#222233" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="4" fill="#e63946"/>
+    <text x="25" y="40" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#e63946">02 · POLICY &amp; AUDIT STUDY</text>
+    <text x="25" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Ground-Truth Data</text>
+    <text x="25" y="100" font-family="Inter, sans-serif" font-size="12" fill="#aaaaaa">Reviewed NSFDC Jan 2026 FAQs (₹5L cap, 102 partners) &amp; NITI Aayog Jan 2026 Report.</text>
+  </g>
+
+  <g transform="translate(800, 160)">
+    <!-- 03 ARCHITECTURE -->
+    <rect x="0" y="0" width="340" height="150" rx="10" fill="#12121b" stroke="#222233" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="4" fill="#e63946"/>
+    <text x="25" y="40" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#e63946">03 · HYBRID SYSTEM DESIGN</text>
+    <text x="25" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Decoupled AI + Rules</text>
+    <text x="25" y="100" font-family="Inter, sans-serif" font-size="12" fill="#aaaaaa">Self-hosted LLM for natural NLP; deterministic Rule Engine for eligibility &amp; EMI math.</text>
+  </g>
+
+  <g transform="translate(60, 360)">
+    <!-- 04 PROTOTYPE -->
+    <rect x="0" y="0" width="340" height="150" rx="10" fill="#12121b" stroke="#222233" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="4" fill="#e63946"/>
+    <text x="25" y="40" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#e63946">04 · PROTOTYPE BUILD</text>
+    <text x="25" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Interactive Centerpiece</text>
+    <text x="25" y="100" font-family="Inter, sans-serif" font-size="12" fill="#aaaaaa">Built live 8-step wizard (#/try) and research publication platform.</text>
+  </g>
+
+  <g transform="translate(430, 360)">
+    <!-- 05 VALIDATION -->
+    <rect x="0" y="0" width="340" height="150" rx="10" fill="#12121b" stroke="#222233" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="4" fill="#e63946"/>
+    <text x="25" y="40" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#e63946">05 · RESEARCH INTEGRITY</text>
+    <text x="25" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Taxonomy &amp; Citations</text>
+    <text x="25" y="100" font-family="Inter, sans-serif" font-size="12" fill="#aaaaaa">Tagged all metrics with Official Fact, Research Finding, SchemeSpear Design, Illustrative.</text>
+  </g>
+
+  <g transform="translate(800, 360)">
+    <!-- 06 DEPLOYMENT -->
+    <rect x="0" y="0" width="340" height="150" rx="10" fill="#12121b" stroke="#2ecc71" stroke-width="2" filter="url(#glow-10)"/>
+    <rect x="0" y="0" width="340" height="4" fill="#2ecc71"/>
+    <text x="25" y="40" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#2ecc71">06 · SIH 2026 READY</text>
+    <text x="25" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Production Showcase</text>
+    <text x="25" y="100" font-family="Inter, sans-serif" font-size="12" fill="#aaaaaa">Zero build errors, complete sitemap, responsive technical dark visual aesthetic.</text>
+  </g>
+
+  <!-- Bottom Bar -->
+  <text x="60" y="585" font-family="JetBrains Mono, monospace" font-size="11" fill="#666677">SCHEMESPEAR BY TEAM SCORPIUS · SIH 2026 PROBLEM STATEMENT SIH26092</text>
+</svg>

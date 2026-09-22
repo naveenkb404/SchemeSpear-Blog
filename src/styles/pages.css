@@ -1,0 +1,215 @@
+/* =============================================
+   SCHEMESPEAR — Page Specific Styles
+   ============================================= */
+
+/* ---------- ARTICLE READING PAGE ---------- */
+.article-page {
+  padding-top: calc(var(--nav-height) + var(--space-8));
+}
+
+.article-header {
+  padding-bottom: var(--space-12);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: var(--space-12);
+}
+
+.article-header__category {
+  margin-bottom: var(--space-4);
+}
+
+.article-header__title {
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-6);
+  letter-spacing: var(--tracking-tight);
+}
+
+.article-header__subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-tertiary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-8);
+}
+
+.article-header__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.article-body {
+  font-size: var(--text-md);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+.article-body h2 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: var(--space-12) 0 var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.article-body h3 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: var(--space-8) 0 var(--space-4);
+}
+
+.article-body p {
+  margin-bottom: var(--space-6);
+  color: var(--text-tertiary);
+}
+
+.article-body ul, .article-body ol {
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-6);
+}
+
+.article-body ul li {
+  list-style-type: disc;
+  margin-bottom: var(--space-2);
+  color: var(--text-tertiary);
+}
+
+.article-body ol li {
+  list-style-type: decimal;
+  margin-bottom: var(--space-2);
+  color: var(--text-tertiary);
+}
+
+.article-footer {
+  margin-top: var(--space-16);
+  padding-top: var(--space-12);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.key-takeaway {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  margin: var(--space-10) 0;
+}
+
+.key-takeaway__title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-widest);
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.key-takeaway__content {
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  line-height: var(--leading-normal);
+}
+
+@media (max-width: 1024px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+  .article-layout .toc {
+    display: none;
+  }
+}
+
+/* ---------- ARCHITECTURE PAGE ---------- */
+.architecture-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.arch-node {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.arch-node:hover {
+  border-color: var(--accent);
+  background: var(--accent-subtle);
+  transform: scale(1.02);
+}
+
+.arch-node__label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.arch-node__desc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.arch-connector {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* ---------- RESEARCH DASHBOARD ---------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- 404 PAGE ---------- */
+.not-found {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: var(--nav-height);
+}
+
+.not-found__code {
+  font-family: var(--font-mono);
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: var(--space-4);
+}
