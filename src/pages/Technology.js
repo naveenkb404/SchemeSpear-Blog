@@ -2,6 +2,7 @@ import { renderSectionHeader } from '../components/SectionHeader.js';
 import { renderTechCard } from '../components/TechCard.js';
 import { renderCTA } from '../components/CTA.js';
 import { techStackData } from '../data/techStack.js';
+import { renderArchitecturePipeline } from '../components/ArchitecturePipeline.js';
 
 export function renderTechnology() {
   return `
@@ -35,57 +36,8 @@ export function renderTechnology() {
           </p>
         </div>
 
-        <!-- EXACT TECHNICAL ARCHITECTURE BOX VISUALIZATION -->
-        <div style="margin: 4rem 0;">
-          <div class="mono-label mono-label--accent" style="text-align: center; margin-bottom: 1.5rem;">
-            SYSTEM ARCHITECTURE PIPELINE
-          </div>
-
-          <div style="display: flex; justify-content: center; overflow-x: auto; padding: 1rem 0;">
-            <pre style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); background: var(--bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); line-height: 1.3;">
-┌─────────────────────┐
-│  BENEFICIARY INPUT  │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│   SELF-HOSTED LLM   │
-│  Natural Language   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│    NLP / PROFILE    │
-│     EXTRACTION      │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ RAG KNOWLEDGE BASE  │
-│  Verified Schemes   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│     RULE ENGINE     │
-│     Eligibility     │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│   MATCHING ENGINE   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│  FINANCIAL ENGINE   │
-│   EMI / Repayment   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ GEO-SPATIAL ROUTING │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ PERSONALIZED ACTION │
-└─────────────────────┘
-            </pre>
-          </div>
-        </div>
+        <!-- NEW 8-STAGE SYSTEM ARCHITECTURE PIPELINE WITH CONTINUOUS FEEDBACK LOOP -->
+        ${renderArchitecturePipeline()}
 
         <!-- ARCHITECTURE PHILOSOPHY BREAKDOWN -->
         <div style="margin: 4rem 0;">
