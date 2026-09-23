@@ -28,51 +28,88 @@ export function renderHome() {
   return `
     <!-- HERO SECTION -->
     <section class="hero grid-bg">
-      <div class="container">
-        <div class="hero__content">
-          <div class="mono-label mono-label--accent hero__label reveal">
-            SCORPIUS · SIH 2026 · SIH26092
-          </div>
-          
-          <h1 class="headline headline--xl hero__title reveal reveal-delay-1">
-            SCHEMESPEAR<br/>
-            THE RIGHT SCHEME.<br/>
-            THE RIGHT GUIDANCE.<br/>
-            <span style="color: var(--accent);">THE RIGHT PARTNER.</span>
-          </h1>
+      <div class="hero__container">
+        <div class="hero__split">
 
-          <p class="body-text body-text--lg hero__subtitle reveal reveal-delay-2">
-            An intelligent platform that helps eligible SC beneficiaries understand available concessional financial support, check scheme conditions, estimate repayment, prepare their application, and identify an appropriate Channel Partner.
-          </p>
+          <!-- LEFT COLUMN: title, subtitle, buttons -->
+          <div class="hero__content">
+            <div class="mono-label mono-label--accent hero__label reveal">
+              SCORPIUS · SIH 2026 · SIH26092
+            </div>
+            
+            <h1 class="headline hero__title reveal reveal-delay-1">
+              <span class="hero__title-line">SCHEMESPEAR</span>
+              <span class="hero__title-line">THE RIGHT SCHEME.</span>
+              <span class="hero__title-line">THE RIGHT GUIDANCE.</span>
+              <span class="hero__title-line hero__title-line--accent">THE RIGHT PARTNER.</span>
+            </h1>
 
-          <div class="hero__actions reveal reveal-delay-3">
-            <a href="#/solution" class="btn btn--primary">
-              EXPLORE THE SOLUTION <span class="arrow">→</span>
-            </a>
-            <a href="#/research" class="btn btn--outline">
-              EXPLORE THE RESEARCH
-            </a>
+            <p class="body-text hero__subtitle reveal reveal-delay-2">
+              An intelligent platform that helps eligible SC beneficiaries understand available concessional financial support, check scheme conditions, estimate repayment, prepare their application, and identify an appropriate Channel Partner.
+            </p>
+
+            <div class="hero__actions reveal reveal-delay-3">
+              <a href="#/solution" class="btn btn--primary">
+                EXPLORE THE SOLUTION <span class="arrow">→</span>
+              </a>
+              <a href="#/research" class="btn btn--outline">
+                EXPLORE THE RESEARCH
+              </a>
+            </div>
           </div>
 
-          <!-- Hero Flow Visual -->
-          <div class="hero-flow reveal reveal-delay-4" style="margin-top: 3rem; flex-direction: row; flex-wrap: wrap; gap: 8px; justify-content: flex-start;">
-            <div class="hero-flow__step active">DISCOVER</div>
-            <div class="hero-flow__arrow">→</div>
-            <div class="hero-flow__step">UNDERSTAND</div>
-            <div class="hero-flow__arrow">→</div>
-            <div class="hero-flow__step">VERIFY</div>
-            <div class="hero-flow__arrow">→</div>
-            <div class="hero-flow__step">PLAN</div>
-            <div class="hero-flow__arrow">→</div>
-            <div class="hero-flow__step">PREPARE</div>
-            <div class="hero-flow__arrow">→</div>
-            <div class="hero-flow__step">ROUTE</div>
-            <div class="hero-flow__arrow">→</div>
-            <div class="hero-flow__step">ACT</div>
+          <!-- RIGHT COLUMN: real-world context integrated cover photograph -->
+          <div class="hero__visual reveal reveal-delay-2" aria-label="Real-world context visual">
+            <div class="hero-cover">
+              <figure class="hero-cover__frame" role="img" aria-label="Small entrepreneur receiving guidance with a financial assistance application">
+                <img
+                  id="hero-photo-img"
+                  src="/images/homepage-beneficiary-access.jpg"
+                  alt="Small entrepreneur receiving guidance with a financial assistance application"
+                  class="hero-cover__img"
+                  loading="eager"
+                  onerror="document.getElementById('hero-photo-img').style.display='none'; document.getElementById('hero-photo-err').style.display='flex';"
+                />
+                <div
+                  id="hero-photo-err"
+                  class="hero-cover__fallback"
+                  aria-hidden="true"
+                >IMAGE UNAVAILABLE</div>
+
+                <!-- Seamless blend gradient on left edge -->
+                <div class="hero-cover__fade-left" aria-hidden="true"></div>
+
+                <!-- Technical caption badge with red corner bracket -->
+                <div class="hero-cover__badge" aria-hidden="true">
+                  <span class="hero-cover__badge-tag">REAL-WORLD CONTEXT</span>
+                  <span class="hero-cover__badge-desc">ACCESS · GUIDANCE · ROUTING</span>
+                </div>
+              </figure>
+            </div>
           </div>
+
+        </div><!-- /.hero__split -->
+
+        <!-- Hero Flow Visual -->
+        <div class="hero-flow reveal reveal-delay-4" style="margin-top: 3rem; flex-direction: row; flex-wrap: wrap; gap: 8px; justify-content: flex-start;">
+          <div class="hero-flow__step active">DISCOVER</div>
+          <div class="hero-flow__arrow">→</div>
+          <div class="hero-flow__step">UNDERSTAND</div>
+          <div class="hero-flow__arrow">→</div>
+          <div class="hero-flow__step">VERIFY</div>
+          <div class="hero-flow__arrow">→</div>
+          <div class="hero-flow__step">PLAN</div>
+          <div class="hero-flow__arrow">→</div>
+          <div class="hero-flow__step">PREPARE</div>
+          <div class="hero-flow__arrow">→</div>
+          <div class="hero-flow__step">ROUTE</div>
+          <div class="hero-flow__arrow">→</div>
+          <div class="hero-flow__step">ACT</div>
         </div>
-      </div>
+
+      </div><!-- /.hero__container -->
     </section>
+
 
     <!-- HORIZONTAL INFO STRIP -->
     <div class="info-strip">
